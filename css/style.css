@@ -476,6 +476,7 @@ template {
   color: #333333;
 }
 
+<<<<<<< HEAD
 .breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,6 +594,8 @@ template {
   font-size: 10px;
 }
 
+=======
+>>>>>>> f194b8b542ebf1f46fa92d0fc9911b9569f31a02
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -602,37 +605,57 @@ template {
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
+<<<<<<< HEAD
     width: 91%;
+=======
+>>>>>>> f194b8b542ebf1f46fa92d0fc9911b9569f31a02
   }
   .container .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
   }
   .container .navbar__search {
+<<<<<<< HEAD
     margin-left: 47px;
+=======
+    margin-left: auto;
+>>>>>>> f194b8b542ebf1f46fa92d0fc9911b9569f31a02
   }
   .container .navbar-menu {
     padding-top: 22px;
     padding-bottom: 22px;
+<<<<<<< HEAD
     padding-left: 14px;
     padding-right: 14px;
+=======
+>>>>>>> f194b8b542ebf1f46fa92d0fc9911b9569f31a02
   }
   .container .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
+<<<<<<< HEAD
   .container .logo {
     width: 133px;
   }
+=======
+>>>>>>> f194b8b542ebf1f46fa92d0fc9911b9569f31a02
   .container .search__input {
     width: 340px;
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 91%;
+=======
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+>>>>>>> f194b8b542ebf1f46fa92d0fc9911b9569f31a02
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -663,6 +686,7 @@ template {
     height: 1px;
     background-color: #333333;
   }
+<<<<<<< HEAD
   .hotel {
     padding-top: 3px;
   }
@@ -699,11 +723,20 @@ template {
 }
 
 @media (max-width: 480px) {
+=======
+}
+
+@media (max-width: 320px) {
+>>>>>>> f194b8b542ebf1f46fa92d0fc9911b9569f31a02
   .container {
     width: 87%;
   }
   .container .navbar-top {
+<<<<<<< HEAD
     padding-top: 22px;
+=======
+    padding-top: 28px;
+>>>>>>> f194b8b542ebf1f46fa92d0fc9911b9569f31a02
     padding-bottom: 28px;
   }
   .container .logo {
