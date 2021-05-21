@@ -70,6 +70,9 @@
           width: 16px
           height: 1px
           background-color: $text-color
+    .breadcrumb
+      &-list
+        padding-bottom: 0px
     .hotel
       padding-top: 3px
       &-name
@@ -100,6 +103,11 @@
       width: 100%
     .map
       width: 100%
+@media ( max-width: 576px)
+  .container
+    width: 91%
+    .slider
+      height: 250px
 
 @media ( max-width: 480px)
   .container
@@ -114,7 +122,21 @@
       &-info
         padding-bottom: 38px
     .slider
-      height: 250px
+      height: 215px
     .hotel
       &__slider
         margin-bottom: 20px
+@media ( max-width: 320px)
+  .container
+    width: 87%
+    .hotel
+      &-options
+        min-height: 400px
+    .slider
+      height: 180px
+    .booking
+      padding: 24px 22px 28px 22px
+      &__info
+        margin-bottom: 6px
+    .map
+      height: 173px
