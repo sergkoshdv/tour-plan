@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
@@ -13,33 +13,15 @@ const swiper = new Swiper('.swiper-container', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+});
+const reviewsSlider = new Swiper('.reviews-slider', {
+ 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
   },
-
-
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 1,
-    },
-    // when window width is >= 767px
-    767: {
-      slidesPerView: 1,
-    },
-    // when window width is >= 992px
-    992: {
-      slidesPerView: 1,
-    }
-  }
 });
