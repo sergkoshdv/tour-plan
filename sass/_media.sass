@@ -141,9 +141,49 @@
   .container
     max-width: 576px
     width: 91%
+  body
+    padding-top: 70px
+
   .navbar
-    &__search,&-menu,&__user
+    &__mobile
+      &--fixed
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        z-index: 99
+
+    &__search,&__user
+      flex-direction: column
+      justify-content: center
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__search
+      width: 72%
+      margin: 0 auto 22px
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 70px
+      padding-top: 31px
+      &--visible
+        display: block
+        overflow: auto
+    &-menu
+      padding-top: 0
+      &__list
+        flex-direction: column
+      &__item
+        margin-bottom: 16px
+        &--mobile
+          &--visible
+            display: block
   .menu
     &-button
       width: 16px
@@ -160,6 +200,13 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        margin-left: 0
+        margin-top: 10px
+        margin-bottom: 11px
+        color: $light
   .breadcrumb
     &-list
       padding-bottom: 0px

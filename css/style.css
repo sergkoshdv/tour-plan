@@ -420,6 +420,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -1569,8 +1573,64 @@ template {
     max-width: 576px;
     width: 91%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 70px;
+  }
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  .navbar__search, .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
+  }
+  .navbar__search--mobile--visible, .navbar__user--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__search {
+    width: 72%;
+    margin: 0 auto 22px;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 70px;
+    padding-top: 31px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+    overflow: auto;
+  }
+  .navbar-menu {
+    padding-top: 0;
+  }
+  .navbar-menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 16px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
   }
   .menu-button {
     width: 16px;
@@ -1597,6 +1657,12 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 11px;
+    color: #ffffff;
   }
   .breadcrumb-list {
     padding-bottom: 0px;
