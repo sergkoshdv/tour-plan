@@ -813,6 +813,31 @@ template {
   height: 100%;
 }
 
+.button__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  min-height: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  margin-top: 15px;
+}
+
 .newsletter {
   position: relative;
   padding: 79px 0 67px 0;
@@ -1310,6 +1335,7 @@ template {
   color: #ffffff;
   background: #EC1F46;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
