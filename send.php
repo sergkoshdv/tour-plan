@@ -8,8 +8,9 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
-// Формирование самого письма
+// Формирование письма с сообщением
 $title = "Новое обращение Best Tour PLan";
 $body = "
 <h2>Новое обращение</h2>
@@ -17,7 +18,12 @@ $body = "
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
-
+// Формирование письма подписки 
+$title_ltr = "Новая подписка на рассылку";
+$body_ltr = "
+<h2>Новая подписка</h2>
+<b>Почта:</b> $email
+";
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -38,10 +44,17 @@ try {
     // Получатель письма
     $mail->addAddress('sergUseer@yandex.ru');  
 
-    // Отправка сообщения
-    $mail->isHTML(true);
+// Отправка сообщения
+$mail->isHTML(true);
+
+if ($email) {
+    $mail->Subject = $title_ltr;
+    $mail->Body = $body_ltr;
+}
+if ($name && $phone && $message) {
     $mail->Subject = $title;
     $mail->Body = $body;    
+}
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
@@ -53,4 +66,8 @@ else {$result = "error";}
 }
 
 // Отображение результата
+if ($email) {
+    header('Location: thankyou-subscribe.html');
+}
 header('Location: thankyou.html');
+
