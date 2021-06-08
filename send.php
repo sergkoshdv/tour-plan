@@ -69,5 +69,6 @@ else {$result = "error";}
 if ($email) {
     header('Location: thankyou-subscribe.html');
 }
-header('Location: thankyou.html');
-
+if ($name && $phone && $message) {
+    header('Location: thankyou.html');
+}
